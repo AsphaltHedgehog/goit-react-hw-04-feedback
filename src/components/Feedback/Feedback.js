@@ -41,7 +41,7 @@ function Feedback() {
     setPercentage(
       newPercentage % 1 === 0 ? newPercentage + '%' : newPercentage.toFixed(2) + '%'
     );
-  }, [total,]);
+  }, [total,good,neutral,bad]);
 
   return (
     <Section title='Please leave feedback'>
