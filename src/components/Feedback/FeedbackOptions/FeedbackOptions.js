@@ -17,15 +17,6 @@ const FeedbackOptions = ({ handleFeedback, options }) => {
     <div className="">
       <ul className={css.list}>
         {btns}
-        {/* <li><button type='button' className={css.buttons} onClick={
-          click => handleFeedback(click.target.textContent)}>Good</button>
-        </li>
-        <li><button type='button' className={css.buttons} onClick={
-          click => handleFeedback(click.target.textContent)}>Neutral</button>
-        </li>
-        <li><button type='button' className={css.buttons} onClick={
-          click => handleFeedback(click.target.textContent)}>Bad</button>
-        </li> */}
       </ul>
     </div>
   );
@@ -33,6 +24,7 @@ const FeedbackOptions = ({ handleFeedback, options }) => {
 
 FeedbackOptions.propTypes = {
   handleFeedback: PropTypes.func.isRequired,
+  options: PropTypes.array.isRequired,
 };
 
 
